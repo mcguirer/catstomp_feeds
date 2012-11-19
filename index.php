@@ -1,24 +1,21 @@
 <?php
     //get the simplepie library
-	require_once('php/autoloader.php');
+	include('../php/autoloader.php');
+	include("feeds.php");
+	?>
+	
+<div id="content">
+<?php    
+
+	foreach ($feedlist as $listedfeed) {
     //grab the feeds
-    $feed = new SimplePie();
+	$feed = new SimplePie();
     //our list of RSS
-$feed->set_feed_url(array(
-    'http://feeds.digg.com/digg/popular.rss',
-    'http://feeds.delicious.com/v2/rss/',
-    'http://feeds.feedburner.com/cssglobe/',
-    'http://news.google.com/news?ned=us&hl=en&output=rss',
-    'http://feeds.dzone.com/dzone/frontpage',
-    'http://www.good-tutorials.com/tutorials/photoshop.rss',
-    'http://www.graphic-design-links.com/rss',
-    'http://feeds2.feedburner.com/BestPhotoshopTutorials',
-    'http://www.technewsworld.com/perl/syndication/rssfull.pl'
-    ));
+	$feed->set_feed_url($listedfeed);
     //enable caching
     $feed->enable_cache(true);
     //complete path for caching system
-    $feed->set_cache_location('cache');
+    $feed->set_cache_location('/home/mcguirer/public/vm.catstomp.com/public/cache');
     //set the amount of seconds you want to cache the feed
     $feed->set_cache_duration(1500);
     //init the process
@@ -26,102 +23,121 @@ $feed->set_feed_url(array(
     //let simplepie handle the content type (atom, RSS...)
     $feed->handle_content_type();
 
-?>
+	?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Tech News | A free Aggregator Template | made in PV.M Garage</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
-</head>
-<body>
-<script type="text/javascript">
+<html>
+<link rel="shortcut icon" href="http://skimfeed.com/favicon.ico">
+<title>News Aggregator</title>
 
-$(document).ready(function(){
 
-	function adPostWidth() {
-		
-		var ovWid = $('#header').width(); /*We use the header width with min-height of 700px in the style*/
-		var postN = Math.floor(ovWid / 250);
-		var widFix = Math.floor(ovWid / postN);
-		
-		$(".post_cont").css({ 'width' : widFix});
 
-	}
-  
-  function WidthHead() {
-		
-		var ovWid = $('#header').width(); /*We use the header width with min-height of 700px in the style*/
-		var widFixHead = Math.floor(ovWid / 3);
-		
-		$(".head_info").css({ 'width' : widFixHead - 2});
+<style type="text/css">
+body{font-family: 'PT Mono', sans-serif;}
+img {}
+a:link {color:blue;text-decoration:none;}
+a:visited {color:#112288;}
+a:hover {color:#FF0000;text-decoration:underline;}
+a:active {color:#0000FF;}
 
-	}
-	
-	adPostWidth();
-  WidthHead();	
 
-	$(window).resize(function () {
-		adPostWidth();	
-    WidthHead();	
-	}); 
-	
-		
-});
-	
-</script>
-<div id="header">
-  <h1><a href="#">TechNews</a></h1>
-  <div class="menu">
-  <ul>
-    <li><a href="#">about</a></li>
-    <li><a href="#">submit feed</a></li>
-    <li><a href="#">help us</a></li>
-    <li><a href="#">contact</a></li>
-  </ul>
-  <span class="adv"><a href="#">Advertise here, check our prices!</a></span>
+.sharefixed{top:10px;width:450px;position:fixed;}
+.sharefooter{width:500px;padding-top:20px;margin-right:auto;margin-left:auto;}
+
+#header{}
+#linkbar {}
+#quicktitle{font-family: serif;font-size:35px;float:left;margin-left:40px; padding-top:0px;background:white;font-weight:bold;text-align:center;margin-right:20px;}
+#tagline{font-size:20px;font-family:helvetica;}
+#content{font-size:12px;padding-top:0px;text-align:center;}
+.boxes{padding-top:20px;width:400px;vertical-align:top;word-wrap:normal;display:inline-block;}
+.topboxes{}
+.favis{float:left;margin-right:4px;}
+.topsiteurls{text-align:left;width:400px;font-size:20px;float:left; margin-left:20px;margin-right:400px;margin-bottom:5px;}
+.boxtitles{text-align:left;width:400px;font-size:16px;float:left;margin-right:400px;margin-bottom:5px;}
+ul{margin-left: 20px;padding: 0px;text-align:left;}
+li{border-bottom:solid 1px #ddd;margin: 0px;padding: 0px;line-height:120%;margin-top:7px;list-style-type:none;}
+.topboxes li{border-bottom:solid 1px #ddd;margin: 0px;padding: 0px;line-height:120%;margin-top:7px;list-style-type:none;}
+#footer{padding-top:10px;}
+
+a.siteurls:link {color: #999; text-decoration: none; }
+a.siteurls:visited {color: #aaa; text-decoration: none; }
+a.siteurls:hover {color: #000; text-decoration: underline; }
+a.siteurls:active {color: #0000FF; } 
+
+a.topsiteurls:link {color: #999; text-decoration: none; }
+a.topsiteurls:visited {color: #999; text-decoration: none; }
+a.topsiteurls:hover {color: #000; text-decoration: underline; }
+a.topsiteurls:active {color: #0000FF; } 
+
+#quicktitle a:link {color: #f00; text-decoration: none; }
+#quicktitle a:visited {color: #f00; text-decoration: none; }
+#quicktitle a:hover {color: #333; text-decoration: none; }
+#quicktitle a:active {color: #0000FF; }
+
+#pages2 a:link {color: blue; text-decoration: underline;}
+#pages2 a:visited {color: blue; text-decoration: underline;}
+#pages2 a:hover {color: #f00; text-decoration: underline; }
+#pages2 a:active {color: #0000FF; }
+
+#toptop{}
+#mess{float:right;}
+
+#pages2{font-family: serif;text-align:left;font-size:16px;margin-top:25px;line-height:160%;color:#000;}
+.eachword{font-size:16px;line-height:120%;}
+#huge{font-size:20px;margin-top:20px;}
+#tidy_toggle{background:#ff9;font-weight:bold;}
+
+.adbox{height:250px;}
+
+#addt{width:500px;}
+#adli{text-align:center;margin-top:10px;}
+#sharebox{text-align:center;margin-top:10px;}
+#feedbox{font-size:14px;}
+
+/*for 3 across hide random box*/
+@media screen and (max-width:1600px) {
+.randombox{display:none;}
+.topboxes li{list-style-type:none;}
+}
+
+/*for ipad and under hide both*/
+@media screen and (max-width:1245px) {
+.randombox{display:inline-block;}
+#hiderand{display:none;}
+.topboxes li{list-style-type:none;}
+}
+
+
+
+</style>
+<style type="text/css"></style></head><body>
+
+
+
+
+
+
+<div class="boxes">
+<ul>
+<?php foreach ($feed->get_items(0, 10) as $item) { 
+echo "<li><a href=\"$item->get_permalink()\" title=\"$item->get_title()\" target=\"_blank\" rel=\"nofollow\">$item->get_title()</a></li>";
+
+}?>
+</ul></div>
+
+
 </div>
-</div>
 
-<div id="down_head" class="clearfix">
-<div class="head_info">
-      <h1>Our Goal</h1>
-      <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-</div>
-<div class="head_info border_info">
-      <h1>RSS Feed</h1>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-</div>
-<div class="head_info">
-      <h1>You are member</h1>
-      <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-</div>
-</div>
+<?php
 
-<div id="news_container" class="clearfix">
-
-<?php foreach ($feed->get_items(0, 100) as $item): ?>
-
-<div class="post_cont">
-      <div class="content">
-      <h2><?php echo $item->get_date('j M Y'); ?> | <?php echo $item->get_date('g:i a'); ?></h2>
-      <h2><img src="<?php $feed = $item->get_feed(); echo $feed->get_favicon(); ?>" alt="favicon" /><a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a></h2> 
-      <span class="visit_link"><a href="<?php echo $item->get_permalink(); ?>">direct link to article</a></span>
-      </div>
-</div>
-
-<?php endforeach; ?>
-
-</div>
-
+ } ?>
 <div id="footer">
-  <p><strong>tech News</strong> is a <a href="#">PV.M Garage Product</a>. It's released under Creative Common License also for commercial use.</p>
-</div>
+
+<br><br>
 
 
-</body>
-</html>
+
+
+
+
+</body></html>
