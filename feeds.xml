@@ -1,0 +1,68 @@
+<opml version="1.0">
+<script/>
+<head>
+<title>
+"Tech Bundle" subscriptions via Ryan in Google Reader
+</title>
+</head>
+<body>
+<outline title="Tech Bundle" text="Tech Bundle">
+<outline text="AllThingsD" title="AllThingsD" type="rss" xmlUrl="http://allthingsd.com/feed/" htmlUrl="http://allthingsd.com"/>
+<outline text="Betabeat" title="Betabeat" type="rss" xmlUrl="http://betabeat.com/feed/" htmlUrl="http://betabeat.com"/>
+<outline text="Bijan Sabet" title="Bijan Sabet" type="rss" xmlUrl="http://bijansabet.com/rss" htmlUrl="http://bijansabet.com/"/>
+<outline text="Continuations" title="Continuations" type="rss" xmlUrl="http://continuations.com/rss" htmlUrl="http://continuations.com/"/>
+<outline text="Ars Technica" title="Ars Technica" type="rss" xmlUrl="http://feeds.arstechnica.com/arstechnica/index/" htmlUrl="http://arstechnica.com"/>
+<outline text="BBC News - Technology" title="BBC News - Technology" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/technology/rss.xml" htmlUrl="http://www.bbc.co.uk/news/technology/#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa"/>
+<outline text="Technology News - CNET News" title="Technology News - CNET News" type="rss" xmlUrl="http://feeds.cnet.com/news/latest" htmlUrl="http://news.cnet.com/"/>
+<outline text="Feld Thoughts" title="Feld Thoughts" type="rss" xmlUrl="http://feeds.feedburner.com/FeldThoughts" htmlUrl="http://www.feld.com/wp"/>
+<outline text="High Scalability - High Scalability" title="High Scalability - High Scalability" type="rss" xmlUrl="http://feeds.feedburner.com/HighScalability" htmlUrl="http://highscalability.com/blog/"/>
+<outline text="MakeUseOf" title="MakeUseOf" type="rss" xmlUrl="http://feeds.feedburner.com/Makeuseof" htmlUrl="http://www.makeuseof.com"/>
+<outline text="Medical Technology News | Medgadget" title="Medical Technology News | Medgadget" type="rss" xmlUrl="http://feeds.feedburner.com/Medgadget" htmlUrl="http://medgadget.com"/>
+<outline text="The Atlantic — News and analysis on politics, business, culture ..." title="The Atlantic — News and analysis on politics, business, culture ..." type="rss" xmlUrl="http://feeds.feedburner.com/TheAtlantic" htmlUrl="http://www.theatlantic.com/"/>
+<outline text="VentureBeat | Tech. People. Money." title="VentureBeat | Tech. People. Money." type="rss" xmlUrl="http://feeds.feedburner.com/Venturebeat" htmlUrl="http://venturebeat.com"/>
+<outline text="A VC" title="A VC" type="rss" xmlUrl="http://feeds.feedburner.com/avc" htmlUrl="http://www.avc.com/a_vc/"/>
+<outline text="MAKE | MAKE magazine" title="MAKE | MAKE magazine" type="rss" xmlUrl="http://feeds.feedburner.com/makezineonline" htmlUrl="http://blog.makezine.com"/>
+<outline text="GigaOM" title="GigaOM" type="rss" xmlUrl="http://feeds.feedburner.com/ommalik" htmlUrl="http://gigaom.com"/>
+<outline text="TED | Talks | List" title="TED | Talks | List" type="rss" xmlUrl="http://feeds.feedburner.com/tedtalks_video" htmlUrl="http://www.ted.com/talks/list"/>
+<outline text="Lifehacker, tips and downloads for getting things done" title="Lifehacker, tips and downloads for getting things done" type="rss" xmlUrl="http://feeds.gawker.com/lifehacker/full" htmlUrl="http://lifehacker.com"/>
+<outline text="Technology news, comment and analysis | Technology | The Guardian" title="Technology news, comment and analysis | Technology | The Guardian" type="rss" xmlUrl="http://feeds.guardian.co.uk/theguardian/technology/rss" htmlUrl="http://www.guardian.co.uk/technology"/>
+<outline text="Inc.com" title="Inc.com" type="rss" xmlUrl="http://feeds.inc.com/home/updates" htmlUrl="http://www.inc.com/"/>
+<outline text="Mac Rumors: Apple Mac iOS Rumors and News You Care About" title="Mac Rumors: Apple Mac iOS Rumors and News You Care About" type="rss" xmlUrl="http://feeds.macrumors.com/MacRumors-All" htmlUrl="http://www.macrumors.com"/>
+<outline text="Social Media News and Web Tips – Mashable – The Social Media ..." title="Social Media News and Web Tips – Mashable – The Social Media ..." type="rss" xmlUrl="http://feeds.mashable.com/mashable" htmlUrl="http://mashable.com"/>
+<outline text="Reuters: Technology News" title="Reuters: Technology News" type="rss" xmlUrl="http://feeds.reuters.com/reuters/technologyNews" htmlUrl="http://www.reuters.com"/>
+<outline text="Wired" title="Wired" type="rss" xmlUrl="http://feeds.wired.com/wired/index" htmlUrl="http://www.wired.com"/>
+<outline text="Business Insider" title="Business Insider" type="rss" xmlUrl="http://feeds2.feedburner.com/businessinsider" htmlUrl="http://www.businessinsider.com"/>
+<outline text="The Next Web - International technology news, business & culture" title="The Next Web - International technology news, business & culture" type="rss" xmlUrl="http://feeds2.feedburner.com/thenextweb" htmlUrl="http://thenextweb.com"/>
+<outline text="FlowingData | Data Visualization, Infographics, and Statistics" title="FlowingData | Data Visualization, Infographics, and Statistics" type="rss" xmlUrl="http://flowingdata.com/feed/" htmlUrl="http://flowingdata.com"/>
+<outline text="Hubski" title="Hubski" type="rss" xmlUrl="http://hubski.com/rss" htmlUrl="http://hubski.com/"/>
+<outline text="Just Show HN" title="Just Show HN" type="rss" xmlUrl="http://justshowhn.tumblr.com/rss" htmlUrl="http://justshowhn.tumblr.com/"/>
+<outline text="Longform" title="Longform" type="rss" xmlUrl="http://longform.org/feed" htmlUrl="http://longform.org"/>
+<outline text="Longreads: The best long-form stories on the web" title="Longreads: The best long-form stories on the web" type="rss" xmlUrl="http://longreads.com/rss" htmlUrl="http://example.com/"/>
+<outline text="Lightspeed Venture Partners" title="Lightspeed Venture Partners" type="rss" xmlUrl="http://lsvp.com/feed/" htmlUrl="http://lsvp.com"/>
+<outline text="Web development tutorials, from beginner to advanced | Nettuts+" title="Web development tutorials, from beginner to advanced | Nettuts+" type="rss" xmlUrl="http://net.tutsplus.com/feed/" htmlUrl="http://net.tutsplus.com"/>
+<outline text="Next Big Future" title="Next Big Future" type="rss" xmlUrl="http://nextbigfuture.com/feeds/posts/default" htmlUrl="http://nextbigfuture.com/"/>
+<outline text="PandoDaily | the site of record for silicon valley" title="PandoDaily | the site of record for silicon valley" type="rss" xmlUrl="http://pandodaily.com/feed/" htmlUrl="http://pandodaily.com"/>
+<outline text="ReadWrite – Web Apps, Web Technology Trends, Social Networking ..." title="ReadWrite – Web Apps, Web Technology Trends, Social Networking ..." type="rss" xmlUrl="http://readwrite.com/main/feed/articles.xml" htmlUrl="http://readwrite.com"/>
+<outline text="The Browser | Writing Worth Reading" title="The Browser | Writing Worth Reading" type="rss" xmlUrl="http://thebrowser.com/best/feed" htmlUrl="http://thebrowser.com/best/feed"/>
+<outline text="The Feature" title="The Feature" type="rss" xmlUrl="http://thefeature.net/rss/links" htmlUrl="http://thefeature.net/"/>
+<outline text="The Hacker News [ THN ] - World's First Dedicated Security Blog" title="The Hacker News [ THN ] - World's First Dedicated Security Blog" type="rss" xmlUrl="http://thehackernews.com/feeds/posts/default" htmlUrl="http://thehackernews.com/"/>
+<outline text="The Tech Block | Publish and promote your tech content" title="The Tech Block | Publish and promote your tech content" type="rss" xmlUrl="http://thetechblock.com/feed" htmlUrl="http://thetechblock.com"/>
+<outline text="In-depth tutorials and articles on web design | Webdesigntuts+" title="In-depth tutorials and articles on web design | Webdesigntuts+" type="rss" xmlUrl="http://webdesign.tutsplus.com/feed/" htmlUrl="http://webdesign.tutsplus.com"/>
+<outline text="Arts & Letters Daily - ideas, criticism, debate" title="Arts & Letters Daily - ideas, criticism, debate" type="rss" xmlUrl="http://www.aldaily.com/rss/rss.xml" htmlUrl="http://aldaily.com/"/>
+<outline text="The UK's leading source for Hardware and Games reviews | bit-tech ..." title="The UK's leading source for Hardware and Games reviews | bit-tech ..." type="rss" xmlUrl="http://www.bit-tech.net/xml/all.rss" htmlUrl="http://www.bit-tech.net/"/>
+<outline text="2X Entrepreneur Turned Venture Capitalist | Both Sides of The Table" title="2X Entrepreneur Turned Venture Capitalist | Both Sides of The Table" type="rss" xmlUrl="http://www.bothsidesofthetable.com/feed/" htmlUrl="http://www.bothsidesofthetable.com"/>
+<outline text="Technology News, Product Reviews and App Reviews | Digital Trends" title="Technology News, Product Reviews and App Reviews | Digital Trends" type="rss" xmlUrl="http://www.digitaltrends.com/feed/" htmlUrl="http://www.digitaltrends.com"/>
+<outline text="Engadget" title="Engadget" type="rss" xmlUrl="http://www.engadget.com/rss.xml" htmlUrl="http://www.engadget.com"/>
+<outline text="Fast Company" title="Fast Company" type="rss" xmlUrl="http://www.fastcompany.com/rss.xml" htmlUrl="http://www.fastcompany.com"/>
+<outline text="Geek.com" title="Geek.com" type="rss" xmlUrl="http://www.geek.com/feed/" htmlUrl="http://www.geek.com"/>
+<outline text="Gizmag | New and Emerging Technology News" title="Gizmag | New and Emerging Technology News" type="rss" xmlUrl="http://www.gizmag.com/xml/" htmlUrl="http://www.gizmag.com/"/>
+<outline text="Quora" title="Quora" type="rss" xmlUrl="http://www.quora.com/rss" htmlUrl="http://www.quora.com/"/>
+<outline text="DepthHub: a jumping off point for deeply involved reddits" title="DepthHub: a jumping off point for deeply involved reddits" type="rss" xmlUrl="http://www.reddit.com/r/DepthHub/.rss" htmlUrl="http://www.reddit.com/r/DepthHub/"/>
+<outline text="Investigative Journalism" title="Investigative Journalism" type="rss" xmlUrl="http://www.reddit.com/r/indepthstories/.rss" htmlUrl="http://www.reddit.com/r/indepthstories/"/>
+<outline text="Ryan spoon, Venture capital at Polaris venture partners | SlideShare" title="Ryan spoon, Venture capital at Polaris venture partners | SlideShare" type="rss" xmlUrl="http://www.slideshare.net/rss/latest" htmlUrl="http://www.slideshare.net/"/>
+<outline text="MIT Technology Review" title="MIT Technology Review" type="rss" xmlUrl="http://www.technologyreview.com/stream/rss/" htmlUrl="http://www.technologyreview.com/stream/?sort=recent"/>
+<outline text="Paris Review Daily - Blog, Writers, Poets, Artists - Paris Review" title="Paris Review Daily - Blog, Writers, Poets, Artists - Paris Review" type="rss" xmlUrl="http://www.theparisreview.org/blog/feed/" htmlUrl="http://www.theparisreview.org/blog"/>
+<outline text="Tom's Hardware: Hardware News, Tests and Reviews" title="Tom's Hardware: Hardware News, Tests and Reviews" type="rss" xmlUrl="http://www.tomshardware.com/feeds/rss2/tom-s-hardware-us,18-1.xml" htmlUrl="http://www.tomshardware.com"/>
+</outline>
+</body>
+</opml>

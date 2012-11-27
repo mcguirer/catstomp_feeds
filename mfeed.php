@@ -1,36 +1,27 @@
 <?php
 	include('../php/autoloader.php');
-	include('feeds.php');
 ?>
 	
 <div id="content">
 <?php    
-
-	foreach ($feedlist as $listedfeed) {
-    //grab the feeds
-	$feed = new SimplePie();
-    //our list of RSS
-	$feed->set_feed_url($listedfeed);
-    //enable caching
-    $feed->enable_cache(true);
-    //complete path for caching system
-    $feed->set_cache_location('/home/mcguirer/public/vm.catstomp.com/public/cache');
-    //set the amount of seconds you want to cache the feed
-    $feed->set_cache_duration(1500);
-    //init the process
-    $feed->init();
-    //let simplepie handle the content type (atom, RSS...)
-    $feed->handle_content_type();
-
+$feeds = array(
+    	'http://rss.cnn.com/rss/cnn_topstories.rss',
+		'http://www.nytimes.com/services/xml/rss/nyt/World.xml',
+        'http://www.newyorker.com/services/mrss/feeds/everything.xml',
+        "http://www.newyorker.com/services/mrss/feeds/reporting.xml",
+        "http://www.newyorker.com/services/mrss/feeds/humor.xml",
+        "http://www.defense.gov/news/afps2.xml",
+        "http://www.federalreserve.gov/feeds/press_all.xml",
+        "http://www.fbi.gov/news/current/rss.xml",
+        "http://www.nasa.gov/rss/breaking_news.rss"
+		);
+   
+   
 	?>
 
 
 <html>
-<link rel="shortcut icon" href="http://skimfeed.com/favicon.ico">
-<title>News Aggregator</title>
-
-
-
+<head>
 <style type="text/css">
 body{font-family: 'PT Mono', sans-serif;}
 img {}
@@ -109,36 +100,47 @@ a.topsiteurls:active {color: #0000FF; }
 
 
 </style>
-<style type="text/css"></style></head><body>
+</head><body>
 
 
 
 
 
 
-<div class="boxes">
-<ul>
-<?php foreach ($feed->get_items(0, 10) as $item) 
-	{ 
-		echo "<li><a href=\"$item->get_permalink()\" title=\"$item->get_title()\" target=\"_blank\" rel=\"nofollow\">$item->get_title()</a></li>";
-
-	}
-?>
-</ul>
-</div>
-
-
-</div>
+<div id="content">
 
 <?php
-
- }
+foreach ($feeds as $url)
+{
+    $feed = new SimplePie();
+    $feed->set_feed_url($url);
+    $feed->enable_cache(true);
+    //complete path for caching system
+    $feed->set_cache_location('/home/mcguirer/public/vm.catstomp.com/public/cache');
+    //set the amount of seconds you want to cache the feed
+    $feed->set_cache_duration(1500);
+    //init the process
+    $feed->init();
+    //let simplepie handle the content type (atom, RSS...)
+    $feed->handle_content_type();
+  ?>
+<div class="boxes">
+    <ul>
+<?php foreach ($feed->get_items(0, 10) as $item): ?>
+    
+ 
+        <div class="item">
+            <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(0, 10); ?>"><?php echo $item->get_title(0, 10); ?></a></li>
+        </div>
+ 
+    <?php endforeach; ?>
+    </ul>
+</div>
+    <?php unset($feed);
+}
 ?>
-<div id="footer">
 
-<br><br>
-
-
+</div>
 
 
 
