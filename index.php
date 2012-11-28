@@ -1,7 +1,7 @@
 <?php
 	include('../php/autoloader.php');
 	include('feeds.php');
-?>
+	?>
 	
 <div id="content">
 <?php    
@@ -118,22 +118,18 @@ a.topsiteurls:active {color: #0000FF; }
 
 <div class="boxes">
 <ul>
-<?php foreach ($feed->get_items(0, 10) as $item) 
-	{ 
-		echo "<li><a href=\"$item->get_permalink()\" title=\"$item->get_title()\" target=\"_blank\" rel=\"nofollow\">$item->get_title()</a></li>";
+<?php foreach ($feed->get_items(0, 10) as $item) { 
+echo "<li><a href=\"$item->get_permalink();\" title=\"$item->get_title()\" target=\"_blank\" rel=\"nofollow\">$item->get_title()</a></li>";
 
-	}
-?>
-</ul>
-</div>
+}?>
+</ul></div>
 
 
 </div>
 
 <?php
 
- }
-?>
+ } ?>
 <div id="footer">
 
 <br><br>

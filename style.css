@@ -1,0 +1,206 @@
+body {
+font-family:dejavuserif-webfont, sans-serif;
+}
+
+a:link {
+color:#000;
+text-decoration:none;
+}
+
+a:visited {
+color:#blue;
+}
+
+.sharefixed {
+top:10px;
+width:450px;
+position:fixed;
+}
+
+.sharefooter {
+width:500px;
+padding-top:20px;
+margin-right:auto;
+margin-left:auto;
+}
+
+#quicktitle {
+font-family:serif;
+font-size:35px;
+float:left;
+margin-left:40px;
+padding-top:0;
+background:#FFF;
+font-weight:700;
+text-align:center;
+margin-right:20px;
+}
+
+#tagline {
+font-size:20px;
+font-family:helvetica;
+}
+
+#content {
+font-size:14px;
+padding-top:0;
+text-align:center;
+}
+
+.boxes {
+padding-top:20px;
+width:400px;
+vertical-align:top;
+word-wrap:normal;
+display:inline-block;
+}
+
+.favis {
+float:left;
+margin-right:4px;
+}
+
+.topsiteurls {
+text-align:left;
+width:400px;
+font-size:20px;
+float:left;
+margin-left:20px;
+margin-right:400px;
+margin-bottom:5px;
+}
+
+.boxtitles {
+text-align:left;
+width:400px;
+font-size:16px;
+float:left;
+margin-right:400px;
+margin-bottom:5px;
+}
+
+ul {
+margin-left:20px;
+text-align:left;
+padding:0;
+}
+
+#footer {
+padding-top:10px;
+}
+
+a.siteurls:visited {
+color:#aaa;
+text-decoration:none;
+}
+
+#quicktitle a:hover {
+color:#333;
+text-decoration:none;
+}
+
+#mess {
+float:right;
+}
+
+#pages2 {
+font-family:serif;
+text-align:left;
+font-size:16px;
+margin-top:25px;
+line-height:160%;
+color:#000;
+}
+
+.eachword {
+font-size:16px;
+line-height:120%;
+}
+
+#huge {
+font-size:20px;
+margin-top:20px;
+}
+
+#tidy_toggle {
+background:#ff9;
+font-weight:700;
+}
+
+.adbox {
+height:250px;
+}
+
+#addt {
+width:500px;
+}
+
+#feedbox {
+font-size:14px;
+}
+
+a:hover,#pages2 a:hover {
+color:red;
+text-decoration:underline;
+}
+
+a:active,a.siteurls:active,a.topsiteurls:active,#quicktitle a:active,#pages2 a:active {
+color:#00F;
+}
+
+li,.topboxes li {
+border-bottom:solid 1px #ddd;
+line-height:120%;
+list-style-type:none;
+margin:7px 0 0;
+padding:0;
+}
+
+a.siteurls:link,a.topsiteurls:link,a.topsiteurls:visited {
+color:#999;
+text-decoration:none;
+}
+
+a.siteurls:hover,a.topsiteurls:hover {
+color:#000;
+text-decoration:underline;
+}
+
+#quicktitle a:link,#quicktitle a:visited {
+color:red;
+text-decoration:none;
+}
+
+#pages2 a:link,#pages2 a:visited {
+color:blue;
+text-decoration:underline;
+}
+
+#adli,#sharebox {
+text-align:center;
+margin-top:10px;
+}
+
+@media screen and max-width1600px {
+.randombox {
+display:none;
+}
+
+.topboxes li {
+list-style-type:none;
+}
+}
+
+@media screen and max-width1245px {
+.randombox {
+display:inline-block;
+}
+
+#hiderand {
+display:none;
+}
+
+.topboxes li {
+list-style-type:none;
+}
+}
