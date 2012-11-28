@@ -1,5 +1,6 @@
+@import url("fonts/font_stylesheet.css");
 body {
-font-family:dejavuserif-webfont, sans-serif;
+font-family:DejaVuSansMonoBook, sans-serif;
 }
 
 a:link {

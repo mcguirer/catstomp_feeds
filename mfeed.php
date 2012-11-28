@@ -10,8 +10,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<link rel="stylesheet" href="fonts/font_stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
 </head><body>
 
@@ -26,13 +24,13 @@
 foreach ($feeds as $url)
 {
     //temp performance monitoring
-    $time = microtime(TRUE);
-    $mem = memory_get_usage();
+  //  $time = microtime(TRUE);
+  //  $mem = memory_get_usage();
 
  
     $feed = new SimplePie();
     $feed->set_feed_url($url);
-    $feed->set_stupidly_fast(true);
+   // $feed->set_stupidly_fast(true);
     $feed->enable_cache(true);
     //complete path for caching system
     $feed->set_cache_location('/home/mcguirer/public/vm.catstomp.com/public/cache');
@@ -56,7 +54,7 @@ foreach ($feeds as $url)
     
  
         <div class="item">
-            <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(); ?>"><?php echo substr($item->get_title(), 0, 52); ?></a></li>
+            <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(); ?>"><?php echo substr($item->get_title(), 0, 47); ?></a></li>
         </div>
  <?php unset($item); ?>
     <?php endforeach; ?>
@@ -65,9 +63,9 @@ foreach ($feeds as $url)
     <?php unset($feed);
 
     // temp performance monitoring
-    print_r(array(
-        'memory' => (memory_get_usage() - $mem) / (1024 * 1024),
-        'seconds' => microtime(TRUE) - $time   ));
+  //  print_r(array(
+   //     'memory' => (memory_get_usage() - $mem) / (1024 * 1024),
+    //    'seconds' => microtime(TRUE) - $time   ));
 }
 ?>
 
