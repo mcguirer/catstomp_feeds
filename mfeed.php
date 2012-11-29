@@ -3,14 +3,15 @@
     include('feeds.php');
 ?>
 	
-<div id="content">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
 
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+
 </head><body>
 
 
@@ -18,7 +19,7 @@
 
 
 
-<div id="content">
+<div class="container-fluid">
 
 <?php
 foreach ($feeds as $url)
@@ -41,21 +42,22 @@ foreach ($feeds as $url)
     //let simplepie handle the content type (atom, RSS...)
     $feed->handle_content_type();
   ?>
-<div class="boxes">
-    <h3>
-    <span class="boxtitles">
-    <a href="<?php echo $feed->get_permalink(); ?>" target="_blank" rel="nofollow"><img class="favis" src="http://g.etfv.co/<?php echo $feed->get_permalink(); ?>" width="16px" height="16px" alt="<?php echo $feed->get_title(); ?>"></a> 
-    <a class="siteurls" href="<?php echo $feed->get_permalink(); ?>" rel="nofollow"><?php echo $feed->get_title(); ?></a>
-
-    </span>
-    </h3>
-    <ul>
+<div class="span4">
+    <div class="row">
+        <h3>
+       
+    <a href="<?php echo $feed->get_permalink(); ?>" target="_blank" rel="nofollow" title="<?php echo $feed->get_title(); ?>"><img class="favis" src="http://g.etfv.co/<?php echo $feed->get_permalink(); ?>" width="16px" height="16px" alt="<?php echo $feed->get_title(); ?>"></a> 
+    <a class="siteurls" href="<?php echo $feed->get_permalink(); ?>" rel="nofollow"><?php echo substr($feed->get_title(), 0, 25); ?></a>
+        </h3>
+    </div>
+    
+    <ul class="unstyled">
 <?php foreach ($feed->get_items(0, 10) as $item): ?>
     
  
-        <div class="item">
+        
             <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(); ?>"><?php echo substr($item->get_title(), 0, 47); ?></a></li>
-        </div>
+       
  <?php unset($item); ?>
     <?php endforeach; ?>
     </ul>
