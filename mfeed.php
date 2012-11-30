@@ -3,6 +3,7 @@
     include('feeds.php');
 ?>
 	
+    <link href="fonts/font_stylesheet.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -47,7 +48,7 @@ foreach ($feeds as $url)
         <h3>
        
     <a href="<?php echo $feed->get_permalink(); ?>" target="_blank" rel="nofollow" title="<?php echo $feed->get_title(); ?>"><img class="favis" src="http://g.etfv.co/<?php echo $feed->get_permalink(); ?>" width="16px" height="16px" alt="<?php echo $feed->get_title(); ?>"></a> 
-    <a class="siteurls" href="<?php echo $feed->get_permalink(); ?>" rel="nofollow"><?php echo substr($feed->get_title(), 0, 25); ?></a>
+    <a class="siteurls" href="<?php echo $feed->get_permalink(); ?>" rel="nofollow"><?php echo substr($feed->get_title(), 0, 18); ?></a>
         </h3>
     </div>
     
@@ -56,7 +57,7 @@ foreach ($feeds as $url)
     
  
         
-            <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(); ?>"><?php echo substr($item->get_title(), 0, 47); ?></a></li>
+            <li><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_title(); ?>"><?php echo substr($item->get_title(), 0, 41); ?></a></li>
        
  <?php unset($item); ?>
     <?php endforeach; ?>

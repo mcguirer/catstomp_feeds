@@ -1,30 +1,41 @@
 <?php
 $feeds = array(
+	//news
 'http://allthingsd.com/feed/', 
  'http://betabeat.com/feed/', 
+ 'http://feeds.bbci.co.uk/news/technology/rss.xml',
+ 'http://feeds.cnet.com/news/latest', 
+ 'http://feeds.feedburner.com/TheAtlantic',
+ 'http://feeds.guardian.co.uk/theguardian/technology/rss',  
+ 'http://feeds.macrumors.com/MacRumors-All', 
+ 'http://feeds2.feedburner.com/businessinsider', 
+ 'http://www.realclearworld.com/index.xml',
+ 'http://feeds.feedburner.com/daytome',
+ 'http://theweek.com/home.rss',
+ 	//Blogs
  'http://bijansabet.com/rss', 
  'http://continuations.com/rss', 
  'http://feeds.arstechnica.com/arstechnica/index/', 
- 'http://feeds.bbci.co.uk/news/technology/rss.xml', 
- 'http://feeds.cnet.com/news/latest', 
+ 
+ 
  'http://feeds.feedburner.com/FeldThoughts', 
  'http://feeds.feedburner.com/HighScalability', 
  'http://feeds.feedburner.com/Makeuseof', 
  'http://feeds.feedburner.com/Medgadget', 
- 'http://feeds.feedburner.com/TheAtlantic', 
+ 
  'http://feeds.feedburner.com/Venturebeat', 
  'http://feeds.feedburner.com/avc', 
  'http://feeds.feedburner.com/makezineonline', 
  'http://feeds.feedburner.com/ommalik', 
  'http://feeds.feedburner.com/tedtalks_video', 
  'http://feeds.gawker.com/lifehacker/full', 
- 'http://feeds.guardian.co.uk/theguardian/technology/rss', 
+ 
  'http://feeds.inc.com/home/updates', 
- 'http://feeds.macrumors.com/MacRumors-All', 
+
  'http://feeds.mashable.com/mashable', 
  'http://feeds.reuters.com/reuters/technologyNews', 
  'http://feeds.wired.com/wired/index', 
- 'http://feeds2.feedburner.com/businessinsider', 
+ 
  'http://feeds2.feedburner.com/thenextweb', 
  'http://flowingdata.com/feed/', 
  'http://hubski.com/rss', 
@@ -54,7 +65,9 @@ $feeds = array(
  'http://www.slideshare.net/rss/latest', 
  'http://www.technologyreview.com/stream/rss/', 
  'http://www.theparisreview.org/blog/feed/', 
- 'http://www.tomshardware.com/feeds/rss2/tom-s-hardware-us,18-1.xml'
+ 'http://www.tomshardware.com/feeds/rss2/tom-s-hardware-us,18-1.xml',
+ 'http://feeds.feedburner.com/IeeeSpectrum',
+ 'http://www.kuro5hin.org/backend.rdf'
  );
 	
 	?>
