@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $username = "feedsw";
 $password = "45pop1";
-$database = "feeds";
+$database = "feedreader";
 
 $link = mysql_connect($hostname, $username, $password) or die("Cannot connect to the database!");
 mysql_select_db($database) or die("Cannot select database!");
