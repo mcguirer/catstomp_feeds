@@ -47,7 +47,7 @@ foreach ($feeds as $url)
     <div class="row">
         <h3>
        
-    <a href="<?php echo $feed->get_permalink(); ?>" target="_blank" rel="nofollow" title="<?php echo $feed->get_title(); ?>"><img class="favis" src="http://g.etfv.co/<?php echo $feed->get_permalink(); ?>" width="16px" height="16px" alt="<?php echo $feed->get_title(); ?>"></a> 
+    <a href="<?php echo $feed->get_permalink(); ?>" target="_blank" rel="nofollow" title="<?php echo $feed->get_title(); ?>"><img class="favis" src="http://<?php echo substr($feed->get_title(), 0, 1); ?>.getfavicon.appspot.com/<?php echo $feed->get_permalink(); ?>" width="16px" height="16px" alt="<?php echo $feed->get_title(); ?>"></a> 
     <a class="siteurls" href="<?php echo $feed->get_permalink(); ?>" rel="nofollow"><?php echo substr($feed->get_title(), 0, 18); ?></a>
         </h3>
     </div>
