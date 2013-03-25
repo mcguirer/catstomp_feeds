@@ -67,6 +67,8 @@ $feeds = array(
  'http://www.theparisreview.org/blog/feed/', 
  'http://www.tomshardware.com/feeds/rss2/tom-s-hardware-us,18-1.xml',
  'http://feeds.feedburner.com/IeeeSpectrum',
+ 'http://planetsysadmin.com/rss20.xml',
+ 'http://queue.acm.org/rss/feeds/blogroll.xml',
  'http://www.kuro5hin.org/backend.rdf'
  );
 	
